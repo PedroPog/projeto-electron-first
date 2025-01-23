@@ -1,0 +1,22 @@
+@if (!initPedido) {
+
+<div class="init-div">
+  <h1>Faça seu pedido</h1>
+  <span class="bk-primary" (click)="initPedido=!initPedido">Toque para iniciar</span>
+</div>
+
+}@else {
+
+<div class="new-pedido">
+  <span>Como gostaria de fazer seu pedido?</span>
+  <div class="icons">
+    <ul>
+      <li routerLink="itens"><img src="assets/icons/restaurant.png" alt="Comer agora">
+        Comer Agora</li>
+      <li routerLink="itens"><img src="assets/icons/online-shopping.png" alt="Para viagem">
+        Para Viagem</li>
+    </ul>
+  </div>
+</div>
+
+}
