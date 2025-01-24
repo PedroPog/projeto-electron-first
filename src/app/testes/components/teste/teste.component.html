@@ -1,0 +1,20 @@
+<h1>Resultados do Banco</h1>
+<button (click)="insertData('NEW')">Inserir Novo Registro</button>
+<button (click)="updateData('UPDATE','1')">Atualizar Registro</button>
+<table *ngIf="data.length > 0; else noData">
+  <thead>
+    <tr>
+      <th *ngFor="let key of columns">{{ key }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of data">
+      <td *ngFor="let key of columns">{{ row[key] }}</td>
+    </tr>
+  </tbody>
+</table>
+<ng-template #noData>
+  <p>Nenhum dado encontrado.</p>
+</ng-template>
+
+
