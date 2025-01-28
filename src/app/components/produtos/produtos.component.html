@@ -1,1 +1,18 @@
-<p>produtos works!</p>
+<h3>Lanches</h3>
+<div class="produtos-list">
+  @for (produto of produtos; track $index) {
+    @if (produto.status) {
+      <div class="item-produto" [routerLink]="['/detalhes-item/'+produto.id]">
+        <img [src]="produto.imagem" alt="">
+        <span>{{produto.description}}</span>
+        <p>R$ {{produto.valor}}</p>
+      </div>
+    }@else {
+      <div class="item-produto sem-estoque">
+        <img [src]="produto.imagem" alt="">
+        <span>{{produto.description}}</span>
+        <p>Esgotado</p>
+      </div>
+    }
+  }
+</div>

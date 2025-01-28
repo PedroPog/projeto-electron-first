@@ -1,47 +1,20 @@
 <div class="categorias">
   <ul>
-    <li><img src="assets/icons/hamburger.png" alt="hamburger">
+    <li class="item-escolhido"><img src="assets/icons/x-burger.svg" alt="hamburger">
       Lanches</li>
-    <li><img src="assets/icons/pizza.png" alt="Pizzas">
+    <li><img src="assets/icons/pizza-fatia.svg" alt="Pizzas">
       Pizzas</li>
   </ul>
 </div>
 <div class="produtos">
-  <app-produtos></app-produtos>
+  <app-produtos [produtos]="pd"></app-produtos>
   <div class="carrinho">
     <span>Seu carrinho</span>
-    <ul>
-      <li>
-        <button class="btn-lixo">lixo</button>
-        <div class="detalhes">
-          <span>Hambuirguer de siri</span>
-          <p>R$ 42,00</p>
-        </div>
-        <button class="btn-menos">-</button>
-        <p>1</p>
-        <button class="btn-mais">+</button>
-      </li>
-      <li>
-        <button>lixo</button>
-        <div class="detalhes">
-          <span>Hambuirguer de siri</span>
-          <p>R$ 42,00</p>
-        </div>
-        <button>-</button>
-        <p>1</p>
-        <button>+</button>
-      </li>
-      <li>
-        <button>lixo</button>
-        <div class="detalhes">
-          <span>Hambuirguer de siri</span>
-          <p>R$ 42,00</p>
-        </div>
-        <button>-</button>
-        <p>1</p>
-        <button>+</button>
-      </li>
-    </ul>
+    <div class="list-produtos">
+      @for (item of items; track $index) {
+        <app-list-produtos></app-list-produtos>
+      }
+    </div>
     <div class="detalhes-total">
       <span>Total: R$ 4020,00</span>
       <button>Finalziar Pedido</button>

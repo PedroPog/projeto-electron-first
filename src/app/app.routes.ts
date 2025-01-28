@@ -7,14 +7,14 @@ import { TesteComponent } from './testes/components/teste/teste.component';
 
 export const routes: Routes = [
 
-  {path:'',component:TesteComponent},
-  {path:'Home',component:HomeComponent},
+  //{path:'',component:TesteComponent},
+  {path:'',component:HomeComponent},
   {
     path:'itens',
     component:GridProdutosComponent
   },
   {
-    path:'detalhes-item',
+    path:'detalhes-item/:id',
     component:DetalhesProdutosComponent
   },
   {

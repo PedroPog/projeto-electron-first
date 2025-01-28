@@ -1,0 +1,49 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2.3% 2%;
+  gap: 2%; /* Reduzindo o espaçamento */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  font-size: 1rem;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: #f5f5f5;
+  box-shadow: 1px 1px 1px 0px #00000047;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.detalhes {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  span {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+}
+
+.options {
+  display: flex;
+  width: 30%; /* Ajuste para um layout mais próximo do original */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.quantidade {
+  font-size: 1rem;
+  font-weight: bold;
+}

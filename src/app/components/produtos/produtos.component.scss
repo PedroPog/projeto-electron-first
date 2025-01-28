@@ -1,0 +1,54 @@
+:host {
+  height: 100%;
+  padding: 5%;
+  overflow: auto;
+}
+
+.produtos-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.item-produto {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 20%;
+  align-items: center;
+  padding: 2%;
+  box-shadow: 1px 1px 3px 0px #00000069;
+  border-radius: 5px;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  cursor: pointer;
+
+  &:active{
+    box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.4117647059);
+  }
+
+  img {
+    width: 45%;
+  }
+
+  span {
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
+
+.sem-estoque{
+  cursor: default;
+  opacity: 40%;
+  &:active{
+    box-shadow: 1px 1px 3px 0px #00000069;
+  }
+}

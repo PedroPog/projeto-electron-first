@@ -1,0 +1,10 @@
+<button class="btn material-symbols-outlined">delete</button>
+<div class="detalhes">
+  <span>{{descricao}}</span>
+  <p>R$ {{valor}}</p>
+</div>
+<div class="options">
+  <button (click)="btnMenos()" class="btn btn-menos">-</button>
+  <p class="quantidade">{{quantidade}}</p>
+  <button (click)="btnMais()" class="btn btn-mais">+</button>
+</div>
