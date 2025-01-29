@@ -1,0 +1,35 @@
+instação pacotes:
+  npm install -g electron
+  npm install -g electron-packager
+
+Compilar o Angular Antes do Electron
+  ng build --base-href ./
+
+Rodar o Electron com o Angular
+  electron .
+
+
+
+Empacotar para Windows (64 bits)
+  electron-packager . electron-app --platform=win32 --arch=x64 --out=dist --overwrite
+    --platform=win32: Gera um executável para Windows.
+    --arch=x64: Arquitetura 64 bits.
+    --out=dist: Salva os arquivos na pasta dist.
+    --overwrite: Sobrescreve arquivos existentes.
+
+Se precisar de um instalador para Windows (.exe), pode usar electron-winstaller:
+  npm install -g electron-winstaller
+  electron-winstaller --src dist/electron-app-win32-x64/ --dest dist/installers/
+
+
+
+Empacotar para Linux (64 bits)
+  electron-packager . electron-app --platform=linux --arch=x64 --out=dist --overwrite
+    --platform=linux: Gera um pacote para Linux.
+
+Gerando um .deb para Linux
+  npm install -g electron-installer-debian
+  electron-installer-debian --src dist/electron-app-linux-x64/ --dest dist/installers/
+
+
+electron-packager . electron-app --plataform=win32 --arch=x64 --out=dist

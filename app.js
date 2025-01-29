@@ -12,13 +12,18 @@ function createWindow() {
     width: 800,
     height: 600,
     fullscreen: false,
+    show: false,
     webPreferences: {
       preload: path.join(__dirname,"/dist/electron-app/browser/assets/preload.js"), // Caminho correto do preload
       contextIsolation: true, // Boa prática de segurança
-      nodeIntegration: false, // Desativar a integração direta do Node.js
+      nodeIntegration: true, // Desativar a integração direta do Node.js
       enableRemoteModule: false, // Desativar o módulo remoto
     },
   });
+  mainWindow.once("ready-to-show", () => {
+    mainWindow.show();
+  });
+
 
   // Carregar a aplicação Angular no Electron
   mainWindow.loadURL(
