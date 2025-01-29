@@ -1,1 +1,38 @@
-<p>forma-pagamentos works!</p>
+@if (pagamento) {
+  <section class="pagamentos">
+    <span>Selecione a forma de pagamento</span>
+    <div class="formas-pagamentos">
+      @for (item of formas; track $index) {
+        <div class="itens-pagamento" (click)="selecionarMetodoPagamento(item)">
+          <img [src]="item.img" alt="">
+          <p>{{item.descricao}}</p>
+        </div>
+      }
+    </div>
+  </section>
+
+  <span class="text-total">
+    <p routerLink="/itens">&lt;</p>
+    Total R$ {{total}}
+  </span>
+}
+@else if(pix){
+  <section class="pix">
+    <span>Pagamento PIX</span>
+    <div>
+      <p>Aponte sua câmera para o QR code</p>
+      <img src="assets/icons/qr-code.png" alt="">
+    </div>
+  </section>
+  <span class="text-total">
+    <p routerLink="/itens">&lt;</p>
+    Total R$ {{total}}
+  </span>
+}@else {
+  <section class="confirmacao">
+    <span>Pagamento realizado com sucesso</span>
+    <img class="check" src="assets/icons/check.png" alt="">
+    <p>imprimindo nota fiscal...</p>
+    <img class="loading" src="assets/icons/loading.gif" alt="">
+  </section>
+}

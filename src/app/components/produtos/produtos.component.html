@@ -2,7 +2,7 @@
 <div class="produtos-list">
   @for (produto of produtos; track $index) {
     @if (produto.status) {
-      <div class="item-produto" [routerLink]="['/detalhes-item/'+produto.id]">
+      <div class="item-produto" (click)="selecionarProdutoDetalhes(produto)">
         <img [src]="produto.imagem" alt="">
         <span>{{produto.description}}</span>
         <p>R$ {{produto.valor}}</p>

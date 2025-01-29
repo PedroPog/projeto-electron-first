@@ -17,128 +17,146 @@ export class GridProdutosComponent {
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: true,
-      id: 1
+      id: 1,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: false,
-      id: 2
+      id: 2,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: true,
-      id: 3
+      id: 3,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: false,
-      id: 4
+      id: 4,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: true,
-      id: 5
+      id: 5,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: false,
-      id: 6
+      id: 6,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: true,
-      id: 7
+      id: 7,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: false,
-      id: 8
+      id: 8,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: true,
-      id: 9
+      id: 9,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: false,
-      id: 10
+      id: 10,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: true,
-      id: 11
+      id: 11,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: false,
-      id: 12
+      id: 12,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: true,
-      id: 13
+      id: 13,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: false,
-      id: 14
+      id: 14,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: true,
-      id: 15
+      id: 15,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: false,
-      id: 16
+      id: 16,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: true,
-      id: 17
+      id: 17,
+      combo: false
     },
     {
       description: 'HAMBURGUER DE SIRI',
       imagem: 'assets/icons/burguer.png',
-      valor: '16,00',
+      valor: '16.00',
       status: false,
-      id: 18
+      id: 18,
+      combo: false
     },
   ];
 }

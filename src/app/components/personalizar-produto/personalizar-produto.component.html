@@ -1,1 +1,10 @@
-<p>personalizar-produto works!</p>
+<span class="title">{{title}}</span>
+<span class="list">
+  @for (item of personalizacao; track $index) {
+    <div class="prod" (click)="selecionarItem(item)">
+      <img [src]="item.img" alt>
+      <span>{{item.descricao}}</span>
+      <p>R$ {{item.valor}}</p>
+    </div>
+  }
+</span>

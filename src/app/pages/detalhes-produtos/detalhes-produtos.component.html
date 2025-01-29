@@ -3,40 +3,24 @@
 
   <div class="infos">
     <span class="titulo">Combo Hambúrguer de Siri</span>
-    <p class="preco-unitario">R$ 45,00</p>
+    <p class="preco-unitario">R$ {{valor}}</p>
   </div>
 
   <div class="qtd">
-    <p class="preco-total">R$ 155,25</p>
+    <p class="preco-total">R$ {{total}}</p>
     <button class="personalizar">PERSONALIZAR</button>
 
     <div class="qtd-pd">
-      <button class="btn-menos">-</button>
-      <p class="quantidade">20</p>
-      <button class="btn-mais">+</button>
+      <button class="btn-menos" (click)="onClickMenos()">-</button>
+      <p class="quantidade">{{quantidade}}</p>
+      <button class="btn-mais" (click)="onClickMais()">+</button>
     </div>
   </div>
 </div>
+<app-personalizar-produto
+  (onClick)="onItemSelecionado($event)"
+  [title]="title"
+  [personalizacao]="personalizao"
+></app-personalizar-produto>
 
-<div class="personalizacao-produto">
-  <span>Escolha o tamanho</span>
-  <span class="list">
-    <div class="prod">
-      <img src="assets/icons/burguer.png" alt="">
-      <span>Combo Hamburguer de Siri</span>
-      <p>R$ 16,00</p>
-    </div>
-    <div class="prod">
-      <img src="assets/icons/burguer.png" alt="">
-      <span>Combo Hamburguer de Siri</span>
-      <p>R$ 16,00</p>
-    </div>
-    <div class="prod">
-      <img src="assets/icons/burguer.png" alt="">
-      <span>Combo Hamburguer de Siri</span>
-      <p>R$ 16,00</p>
-    </div>
-  </span>
-
-</div>
-<span>CANCELAR</span>
+<span class="btn_cancelar" [routerLink]="['/itens']">CANCELAR</span>

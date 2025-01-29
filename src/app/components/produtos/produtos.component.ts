@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Produtos } from '../../models/produtos.interfaca';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+import { DetalhesProdutosComponent } from '../../pages/detalhes-produtos/detalhes-produtos.component';
 
 @Component({
   selector: 'app-produtos',
@@ -14,4 +15,21 @@ import { RouterModule } from '@angular/router';
 export class ProdutosComponent {
 
   @Input() produtos!:Produtos[];
+
+  constructor(
+    private router:Router,
+  ){
+
+  }
+
+
+  selecionarProdutoDetalhes(produto: Produtos) {
+    console.table(produto);
+    this.router.navigate(['/detalhes-item', produto.id], {
+      queryParams: {
+        valor: produto.valor,  // Valor que deseja passar
+        combo: produto.combo  // verificar se é combo ou nao
+      }
+    });
+  }
 }

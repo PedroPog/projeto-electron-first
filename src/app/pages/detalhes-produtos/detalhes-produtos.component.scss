@@ -1,5 +1,6 @@
 :host{
   background-color: #fff8ec;
+  height: 100%;
 }
 .produto-detalhes {
   display: flex;
@@ -79,5 +80,18 @@
   }
 
 }
-
+.btn_cancelar{
+  position: fixed;
+  background-color: #ff8000;
+  width: 100%;
+  color: white;
+  bottom: 0;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  &:active{
+    color: black;
+  }
+}
 

@@ -89,6 +89,7 @@
       }
 
       button {
+        cursor: pointer;
         width: 50%;
         display: flex;
         justify-content: space-between;
@@ -98,6 +99,10 @@
         border-radius: 5px;
         padding: 2% 2%;
         font-weight: 700;
+        &:active{
+          color: black;
+          box-shadow: inset 1px 1px 3px 2px #00000069;
+        }
       }
     }
   }
